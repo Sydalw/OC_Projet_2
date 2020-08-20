@@ -1,0 +1,25 @@
+body
+{
+    display:flex;
+}
+aside
+{
+    
+}
+
+aside img
+{
+    height:150px;
+}
+
+article
+{
+    display:flex;
+}
+
+#recos article
+{
+    display:inherit;
+    display:inline-block;
+}
+
