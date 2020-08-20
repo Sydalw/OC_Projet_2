@@ -1,10 +1,40 @@
+@font-face
+{
+	font-family:'neuropolitical';
+	src: url('fonts/neuropolitical/neuropolitical.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*--------------------------------------------------------*/
+/*Paramètres généraux du body*/
+
 body
 {
     display:flex;
+    font-family: tahoma;
+    background-color: darkgray;
+    width: 1190px;
+    margin:auto;
 }
-aside
+
+h1, h2, h3, h4
 {
-    
+
+}
+
+/*--------------------------------------------------------*/
+/*Mise en page du aside*/
+
+#boite_photo
+{
+    display:flex;
+    justify-content: center;
+}
+
+#boite_photo div
+{
+
 }
 
 aside img
@@ -12,14 +42,138 @@ aside img
     height:150px;
 }
 
+aside
+{
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: black;
+    color:white;
+}
+
+.contenu_boite
+{
+    text-align: justify;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+h5
+{
+    background-color: darkseagreen;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+}
+
+h6
+{
+    font-size: 1em;
+    font-weight: 100;
+    margin-bottom: 0;
+}
+
+p
+{
+    margin-top: 0;
+}
+
+/*--------------------------------------------------------*/
+/*Mise en page du corps*/
+
+#corps
+{
+    flex:2;
+    background-color: white;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+#prenom
+{
+    color:darkseagreen;
+}
+
+#dev
+{
+    text-decoration: underline;
+    text-decoration-color: darkseagreen;
+}
+
+section
+{
+        margin-bottom: 80px;
+}
+
+h1
+{
+    font-size: 3em;
+    margin-bottom: 0;
+    margin-top: 80px;
+    font-weight: 100;
+}
+
+h1 + p
+{
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+h2
+{
+    border-bottom: 1px solid darkseagreen;
+    font-weight: 100;
+}
+
+h2, h3
+{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+h4
+{
+    font-weight: 100;
+}
+
 article
 {
     display:flex;
 }
 
+.date-lieu
+{
+    flex:1;
+}
+
+.description
+{
+    flex:2;
+}
+
+ul
+{
+    list-style: none;
+    padding-left: 0px;
+}
+
+li
+{
+    
+}
+    
+#recos
+{
+    
+}
+
 #recos article
 {
     display:inherit;
-    display:inline-block;
+    display:inline-block;    
 }
 
