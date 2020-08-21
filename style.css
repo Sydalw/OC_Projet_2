@@ -23,6 +23,11 @@ h1, h2, h3, h4
 
 }
 
+a
+{
+    text-decoration: none;
+}
+
 /*--------------------------------------------------------*/
 /*Mise en page du aside*/
 
@@ -32,14 +37,13 @@ h1, h2, h3, h4
     justify-content: center;
 }
 
-#boite_photo div
-{
-
-}
-
-aside img
+#boite_photo img
 {
     height:150px;
+    width:150px;
+    margin-top: 40px;
+    border:4px solid #446e5c;
+    border-radius: 75px;
 }
 
 aside
@@ -61,12 +65,18 @@ aside
 
 h5
 {
-    background-color: darkseagreen;
+    background-color: #5f9a81;
     padding-bottom: 15px;
     padding-top: 15px;
     text-align: center;
     text-transform: uppercase;
     color: black;
+    font-size:1.4em;
+}
+
+aside a
+{
+    color: white;
 }
 
 h6
@@ -81,6 +91,26 @@ p
     margin-top: 0;
 }
 
+#loisirs
+{
+
+}
+
+#loisirs .contenu_boite
+{
+    display:flex;
+    width:300px;
+    justify-content: space-between;
+}
+
+#loisirs img
+{
+    width:50px;
+    border: 2px solid #446e5c;
+    border-radius: 25px;
+    /*margin: 0 20px 0 20px;*/
+}
+
 /*--------------------------------------------------------*/
 /*Mise en page du corps*/
 
@@ -92,15 +122,19 @@ p
     padding-right: 60px;
 }
 
+header
+{
+    margin-bottom: 100px;
+}
 #prenom
 {
-    color:darkseagreen;
+    color:#5f9a81;
 }
 
 #dev
 {
     text-decoration: underline;
-    text-decoration-color: darkseagreen;
+    text-decoration-color: #5f9a81;
 }
 
 section
@@ -125,7 +159,7 @@ h1 + p
 
 h2
 {
-    border-bottom: 1px solid darkseagreen;
+    border-bottom: 1px solid #5f9a81;
     font-weight: 100;
 }
 
@@ -163,12 +197,18 @@ ul
 
 li
 {
-    
+    text-align: justify;
 }
     
+
 #recos
 {
-    
+}
+
+#recos p
+{
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 #recos article
@@ -177,3 +217,36 @@ li
     display:inline-block;    
 }
 
+#recos a
+{
+    color: black;
+}
+
+/*--------------------------------------------------------*/
+/*Mise en page responsive*/
+@media screen and (max-width: 1280px)
+{
+
+    body
+    {
+        width:100%;
+        flex-direction: column-reverse;
+    }
+    
+    #boite_photo
+    {
+        display:none;
+    }
+    
+    #contact p, h6
+    {
+        text-align: center;
+    }
+
+    #loisirs .contenu_boite
+    {
+
+
+    }
+    
+}
