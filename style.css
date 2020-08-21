@@ -23,6 +23,11 @@ a
     text-decoration: none;
 }
 
+a:hover
+{
+    color:#5f9a81;
+}
+
 /*--------------------------------------------------------*/
 /*Mise en page du aside*/
 
@@ -259,6 +264,10 @@ li
     color: black;
 }
 
+#recos a:hover
+{
+    color:#5f9a81;
+}
 /*--------------------------------------------------------*/
 /*Mise en page responsive*/
 @media screen and (max-width: 1280px)
