@@ -1,10 +1,11 @@
 @font-face
 {
-	font-family:'neuropolitical';
-	src: url('fonts/neuropolitical/neuropolitical.ttf');
+	font-family:'Raleway';
+	src: url('fonts/Raleway/Raleway-VariableFont_wght.ttf');
 	font-weight: normal;
 	font-style: normal;
 }
+
 
 /*--------------------------------------------------------*/
 /*Paramètres généraux du body*/
@@ -12,7 +13,7 @@
 body
 {
     display:flex;
-    font-family: tahoma;
+    font-family: 'Raleway',tahoma;
     background-color: darkgray;
     width: 1190px;
     margin:auto;
@@ -111,12 +112,17 @@ p
     margin-bottom: 40px;
 }
 
+#loisirs a {
+   border: 2px solid #446e5c;
+   height: 50px;
+   display: block;
+   border-radius: 25px;
+   overflow: hidden;
+}
+
 #loisirs img
 {
     width:50px;
-    border: 2px solid #446e5c;
-    border-radius: 25px;
-    /*margin: 0 20px 0 20px;*/
 }
 
 #loisirs img:hover
@@ -176,22 +182,16 @@ section
     margin-bottom: 80px;
 }
 
-.icones
+.titre
 {
-    display:flex;
     border-bottom: 1px solid #5f9a81;
     padding-bottom: 0;
-}
-
-.icones img
-{
-    height:30px;
 }
 
 h2
 {
     font-weight: 100;
-    margin: 0 0 0 30px;
+    margin: 0 0 0 0;
 }
 
 h2, h3
@@ -215,20 +215,19 @@ h4
 article
 {
     display:flex;
-    margin: 20px 0 0 60px;
+    margin: 20px 0 0 40px;
 }
 
 .date-lieu
 {
     flex:1;
-    display:flex;
+    display:flex; 
 }
 
-.date-lieu img
+.date-lieu i
 {
-    height:15px;
-    margin-top:10px;
-    padding-right: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
 .description
